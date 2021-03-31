@@ -1,0 +1,15 @@
+<h2>About</h2>
+
+<div>
+
+    <p>{{ about }}</p>
+    <br>
+    <p>A website by: {{author}}</p>
+
+    {% if author %}
+    <p>The authors name has been provided</p>
+
+    {% else %}
+    <p>The authors name has NOT been provided</p>
+    {% endif %}
+</div>
