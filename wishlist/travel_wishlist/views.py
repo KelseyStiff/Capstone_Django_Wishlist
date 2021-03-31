@@ -31,7 +31,7 @@ def places_visited(request):
 
 def place_was_visited(request, place_pk):
     if request.method == 'POST':
-        place = place.object_or_404(Place, pk=place_pk)
+        place = get_object_or_404(Place, pk=place_pk)
         place.visited = True
         place.save()
     return redirect('place_list')
