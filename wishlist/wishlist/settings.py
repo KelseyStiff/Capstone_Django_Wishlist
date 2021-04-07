@@ -119,3 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#Media url, for user-created media, becomes part of URL when images are displayed
+MEDIA_URL = '/media/'
+
+
+import os
+#where in the file system to save user uploaded files
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
